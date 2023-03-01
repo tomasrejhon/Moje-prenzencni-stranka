@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://kit.fontawesome.com/70c1f394e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Tomáš Rejhon - Prezenční web</title>
+</head>
+
+<body>
+  <!-- Mobile menu button (hamburger ) -->
+  <div id="home"></div>
+  <div class="menuButton" id="menuButton">
+    <div class="linesContainer">
+      <span></span>
+    </div>
+  </div>
+
+  
+  <!-- Side menu -->
+  <aside class="sideMenu sideMenuShow prevent-select" id="sideMenu"> 
+    <p class="logo">TR</p>
+
+    <nav>
+
+      <ul class="navBar">
+
+        <li class="homeNav">
+          <a href="#home" class="navItem">
+            <i class="fa-solid fa-house"></i>
+            <span class="navItemName">DOMŮ</span>
+          </a>
+        </li>
+
+        <li class="aboutNav">
+          <a href="#about" class="navItem">
+            <i class="fa-solid fa-user"></i>
+            <span class="navItemName">O MNĚ</span>
+          </a>
+        </li>
+
+        <li class="skillsNav">
+          <a href="#education" class="navItem">
+            <i class="fa-solid fa-user-graduate"></i>
+            <span class="navItemName">VZDĚLÁNÍ</span>
+          </a>
+        </li>
+
+        <li class="skillsNav">
+          <a href="#skills" class="navItem">
+            <i class="fa-solid fa-code"></i>
+            <span class="navItemName">DOVEDNOSTI</span>
+          </a>
+        </li>
+
+        <li class="worksNav">
+          <a href="#works" class="navItem">
+            <i class="fa-sharp fa-solid fa-folder-open"></i>
+            <span class="navItemName">PROJEKTY</span>
+          </a>
+        </li>
+
+        <li class="contactNav">
+          <a href="#contact" class="navItem">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="navItemName">KONTAKT</span>
+          </a>
+        </li>
+
+      </ul>
+      
+    </nav>
+
+    <div class="nothing">
+        <!-- div for flexbox -->
+    </div>
+  </aside>
+
+  <!--Beginning of the wrapper -->
+  <div class="outerWrapper"> 
+    <div class="innerWrapper">
+      <!-- Header -->
+      <header>
+        <div class="heroImageContainer">
+          <img src="./img/profilPctr.jpg">
+        </div>
+        <div class="heroDescription">
+          <h1><span>TOMÁŠ</span> REJHON</h1>
+          <p class="smallBio">Začínající <span>Front-End Web Developer</span></p>
+          <div class="socialsResume">
+            <a class="resumeLink" href="https://tomasrejhon.cz/pdf/rejhoncv.pdf" target="_blank">Životopis</a>
+          </div>
+        </div>
+      </header>
+      <!-- Beginning of Main -->
+      <main>
+        <!-- About Section -->
+        <section class="aboutSection" id="about">
+          <div class="sectionHead">
+            
+            <h2>O mně a mojí cestě k IT</h2>
+          </div>
+          
+          <article class="aboutContainer sectionContainer">
+            <p>Zdravím, já jsem <span>Tomáš</span> a vítám Vás na mé prezenční stránce. V následujících řádcích bych Vám chtěl popsat, jak jsem se dostal k IT. Po vystudování střední školy stavebního směru jsem se rovnou vydal do praxe, během 3 let v oboru jsem vyzkoušel hned několik pozic a tak nějak jsem si začal uvědomovat, že tohle nebude úplně pro mě. Moje první střetnutí s programováním byla aplikace <a href="https://mimo.org/" target="_blank">Mimo</a>, která mi dala základy HTML a CSS. Začalo mě to bavit a měl jsem chuť objevovat nové věci, bylo skvělé vidět, jak pár řádků kódu dokáže vyrobit vcelku pěknou stránku. Začínalo mě to čím dál více bavit a pustil jsem tedy do prozkoumávání tohoto, pro mě neznámého světa. Informace jsem zpočátku čerpal hlavně z <span>youtube</span> a různých blogů jako například <a href="https://www.vzhurudolu.cz/" target="_blank">vzhurudolu.cz</a> nebo <a href="https://medium.com/" target="_blank">medium.com</a>, poté jsem přešel na vzdělávací platformu <a href="https://skillmea.cz/" target="_blank">skillmea.cz</a>, na které jsem absolvoval několik online kurzů.  Stal jsem se členem skupiny <a href="https://junior.guru/" target="_blank">junior.guru</a>, která pomáhá juniorním lidem dostat se do IT a také jsem začal chodit na místní komunitní meetupy, pořádané převážně spolkem <a href="https://frontendisti.cz/" target="_blank">frontendisti.cz</a>. A nyní se nacházím na cestě za svou první prací v IT oboru.
+            </p>
+          </article>
+      
+        </section>
+
+       
+
+        <!-- Skills Section -->
+        <section class="skillsSection eduSection" id="education">
+          <div class="sectionHead">
+            <h2>VZDĚLÁNÍ</h2>
+          </div>
+        
+          <div class="skillsContainer sectionContainer">
+            <ul class="eduGrid">
+              <li>
+                <div class="itemContainer">
+
+                  <h3>Webrebel 1: HTML, CSS & Javascript - Skillmea.cz (Dříve learn2code.cz) </h3>
+
+                  <p>Tento online kurz mě naučil základy webových technologií jako HTML, CSS a JavaScript (hlavně knihovnu jQuery). Dále se kurz věnoval návrhu responzivního webu a principu mobile first.  </p>
+                  <div class="wraperLink">
+                    <a href="https://skillmea.cz/online-kurzy/webrebel-1-html-css-javascript" target="_blank" class="course">Odkaz na kurz</a>
+                    <a href="" target="_blank" class="certifikate c1">Certifikát</a>
+                  </div>
+
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                 
+                  <h3>Základy programování a OOP - Skillmea.cz (Dříve learn2code.cz) </h3>
+
+                  <p>V tomto online kurzu jsem se naučil, jak fungují základní principy programování jako proměnné, funkce, cykly, podmínky atd. Naučil jsem se zde, jak funguje OOP. Celý kurz byl v jazyku PHP.
+                  </p>
+
+                  <div class="wraperLink">
+                    <a href="https://skillmea.cz/online-kurzy/zaklady-programovani-a-oop" target="_blank" class="course">Odkaz na kurz</a>
+                    <a href="" target="_blank" class="certifikate c2">Certifikát</a>
+                  </div>
+
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+              
+                  <h3>CSS preprocesory: Sass  - Skillmea.cz (Dříve learn2code.cz) </h3>
+
+                  <p>Pomocí tohoto online kurzu jsem se naučil používat CSS preprocesor Sass a zjistil jsem, že CSS lze zapisovat i jednodušším způsobem. 
+                  </p>
+
+                  <div class="wraperLink">
+                    <a href="https://skillmea.cz/online-kurzy/css-preprocesory-sass" target="_blank" class="course">Odkaz na kurz</a>
+                    <a href="" target="_blank" class="certifikate c3">Certifikát</a>
+                  </div>
+
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  
+                  <h3>JavaScript a ES6 - Skillmea.cz (Dříve learn2code.cz) </h3>
+
+                  <p>
+                    Tento online kurz mě obohatil o spoustu znalostí ohledně  JavaScriptu, hlavně o jeho verzi ES6/ES7. Naučil jsem se používat SVG animace, několik JS knihoven, packed managery npm a yarn, modul bandlery  webpack a parcel.
+                  </p>
+
+                  <div class="wraperLink">
+                    <a href="https://skillmea.cz/online-kurzy/online-kurz-javascript-es6" target="_blank" class="course">Odkaz na kurz</a>
+                    <a href="" target="_blank" class="certifikate c4">Certifikát</a>
+                  </div>
+
+                </div>
+              </li>
+              
+            </ul>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skillsSection" id="skills">
+          <div class="sectionHead">
+            <h2>DOVEDNOSTI</h2>
+          </div>
+        
+          <div class="skillsContainer sectionContainer prevent-select">
+            <ul class="skillsGrid">
+
+              <li>
+                <div class="itemContainer">
+                  <img src="./img/technology/html.svg">
+                  <p>HTML</p>
+
+                  <div class="progressCircles  html">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <p class="progressDescription">Velmi pokročilý</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="itemContainer">
+                  <img src="./img/technology/css.svg"">
+                  <p>CSS</p>
+                  <div class="progressCircles  css">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <p class="progressDescription">Velmi pokročilý</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="itemContainer">
+                  <img src="./img/technology/javascript.svg"">
+                  <p>JavaScript</p>
+                  <div class="progressCircles javascript">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <p class="progressDescription">Pokročilý</p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="itemContainer">
+                  <img src="./img/technology/jquery.svg"">
+                  <p>jQuery</p>
+                  <div class="progressCircles jquery">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <p class="progressDescription">Pokročilý</p>
+              </li>
+              
+              <li>
+                <div class="itemContainer">
+                  <img src="./img/technology/sass.svg"">
+                  <p>SASS</p>
+                  <div class="progressCircles sass">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <p class="progressDescription">Mírně pokročilý</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="itemContainer">
+                  <img src="./img/technology/react.svg">
+                  <p>React</p>
+                  <div class="progressCircles react">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <p class="progressDescription">Začátečník</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="itemContainer">
+                  <img src="./img/technology/php.svg"">
+                  <p>php</p>
+                  <div class="progressCircles php">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <p class="progressDescription">Mírně pokročilý</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="itemContainer">
+                  <img src="./img/technology/git.svg"">
+                  <p>Git</p> 
+                  <div class="progressCircles git">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <p class="progressDescription">Pokročilý</p>                  
+                </div>
+              </li>
+              
+              <li>
+                <div class="itemContainer">
+                  <img src="./img/technology/photoshop.svg"">
+                  <p>Photoshop</p> 
+                  <div class="progressCircles photoshop">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <p class="progressDescription">Pokročilý</p>                  
+                </div>
+              </li>
+              
+              <li>
+                <div class="itemContainer">
+                  <img src="./img/technology/figma.svg"">
+                  <p>Figma</p> 
+                  <div class="progressCircles figma">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <p class="progressDescription">Začátečník</p>                   
+                </div>
+              </li>
+              
+            </ul>
+          </div>
+        </section>
+
+        <!-- Language Section -->
+        <section class="skillsSection" id="skills">
+          <div class="sectionHead">
+            <h2>JAZYKY</h2>
+          </div>
+        
+          <div class="skillsContainer sectionContainer preventSelect">
+            <ul class="skillsGrid">
+
+              <li>
+                <div class="itemContainer">
+                  <img src="./img/flags/cz.svg">
+                  <p>Čeština</p>
+                  <div class="progressCircles czech">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <p class="progressDescription">Rodilý mluvčí - C2</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="itemContainer">
+                  <img src="./img/flags/gb.svg">
+                  <p>Angličtina</p>
+                  <div class="progressCircles english">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <p class="progressDescription">Mírně pokročilý - B1</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="itemContainer">
+                  <img src="./img/flags/de.svg">
+                  <p>Němčina</p>
+                  <div class="progressCircles german">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <p class="progressDescription">Začátečník - A1</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="itemContainer">
+                  <img src="./img/flags/ru.svg">
+                  <p>Ruština</p>
+                  <div class="progressCircles russian">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <p class="progressDescription">Pokročilý Začátečník - A2</p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </section>
+
+        <!-- Works Section -->
+        <section class="worksSection" id="works">
+          <div class="sectionHead">
+            <h2>PROJEKTY</h2>
+          </div>
+
+          <div class="worksContainer sectionContainer">
+            <article class="workBox">
+              <div class="workImageContainer">
+          
+                                    <!-- Swiper -->
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="/img//slider-img/mr1.png"  alt=""></div>
+                      <div class="swiper-slide"><img src="/img//slider-img/mr2.png"  alt=""></div>
+                      <div class="swiper-slide"><img src="/img//slider-img/mr3.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+              </div>
+              
+              <div class="workDescribeContainer">
+                <h3>Marekrosenkranz.com - fotoweb</h3>
+                <h4>Použité technologie: <span class="techStack">HTML</span>, <span class="techStack">CSS</span>, <span class="techStack">jQuery</span>, <span class="techStack">PhotoSwipe</span></h4>
+                <ul>
+                  <li>Můj první komerční projekt</li>
+                  <li>Web slouží jako vizitka, pro fotografa. Nachazí se zde potrfolio, informace o poskytovaných službách a kontakty </li>
+                  <li>Custom udělaná grafika + upravený font (přidáná diakritika a změna některých znaků), responzivní design</li>
+                </ul>
+                <div class="workLinks">
+                  <a href="https://marekrosenkranz.com/" class="liveLink" target="_blank" >Odkaz na web</a>
+                  <a href="https://github.com/RejhyT/https-marekrosenkranz.com---fotoweb/tree/master" class="liveLink" target="_blank" >GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="workBox">
+              <div class="workImageContainer">
+          
+                                    <!-- Swiper -->
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="/img//slider-img/tr1.png"  alt=""></div>
+                      <div class="swiper-slide"><img src="/img//slider-img/tr2.png"  alt=""></div>
+                      
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+              </div>
+              
+              <div class="workDescribeContainer">
+                <h3>Tomasrejhon.cz - cv web</h3>
+                <h4>Použité technologie: <span class="techStack">HTML</span>, <span class="techStack">CSS</span>, <span class="techStack">jQuery</span>, <span class="techStack">Font Awesome</span></h4>
+                <ul>
+                  <li>Můj prezenční web, sloužící jako webové cv</li>
+                  <li>Responzivní design</li>
+                </ul>
+                <div class="workLinks">
+                  <a href="https://tomasrejhon.cz/" class="liveLink" target="_blank" >Odkaz na web</a>
+                  <a href="https://github.com/RejhyT/https-marekrosenkranz.com---fotoweb/tree/master" class="liveLink" target="_blank" >GitHub</a>
+                </div>
+              </div>
+            </article>
+
+        </div>
+        </section>
+        
+            
+
+        <!-- Contact Section -->
+        <section class="contactSection" id="contact">
+          <div class="sectionHead">
+            <h2>KONTAKTY</h2>
+          </div>
+
+          <div class="contactContainer sectionContainer">
+
+            <h3>Pojďme se propojit</h3>
+
+            <div class="contactTypes">
+            
+
+              <div class="flexContainer">
+                <div class="typeBox">
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:rejhon996@gmail.com" target="_blank">rejhon996@gmail.com</a>
+                  <p>Email</p>
+                </div>
+              </div>
+            
+              <div class="flexContainer">
+                <div class="typeBox">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <a href="https://www.linkedin.com/in/rejhontomas/" target="_blank">Tomáš Rejhon</a>
+                  <p>LinkedIn</p>
+                </div>
+              </div>
+
+              <div class="flexContainer">
+                <div class="typeBox">
+                  <i class="fa-brands fa-github"></i>
+                  <a href="https://github.com/tomasrejhon" target="_blank">Tomáš Rejhon</a>
+                  <p>LinkedIn</p>
+                </div>
+              </div>
+
+            
+          </div>
+        </section>
+      </main> <!-- End of Main -->
+    </div>
+    <a href="#" class="backToTop">^</a>
+    <!-- Footer -->
+    <footer>
+      <p>© Tomáš Rejhon 2022 - 2023</p>
+    </footer>
+    
+  </div> <!-- End of the wrapper -->
+  <script type="text/javascript" src="/js/jquery-3.6.3.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.lockscroll.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+
+</body>
+
+</html>
