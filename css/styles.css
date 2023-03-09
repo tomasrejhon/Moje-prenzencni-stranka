@@ -12,6 +12,8 @@
   --color-main-hower: #af121fde;
 }
 
+
+
 /* css reset*/
 
 * {
@@ -45,6 +47,10 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+}
+
+hr{
+  width: 90%;
 }
 
 
@@ -331,7 +337,6 @@ header .heroImageContainer {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  
   position: relative;
 }
 
@@ -503,7 +508,6 @@ header .heroDescription .socialsResume .resumeLink:focus {
   color: white;
   background-color: var(--color-main);
   font-size: 1rem;
-
   padding: 8px 6px;
   border: 0.5px solid var(--color-main);
   display: inline-block;
@@ -659,6 +663,11 @@ header .heroDescription .socialsResume .resumeLink:focus {
 
 .php :nth-child(1),
 .php :nth-child(2){
+  background: var(--color-main-hower) !important;
+}
+
+.mySql :nth-child(1),
+.mySql :nth-child(2){
   background: var(--color-main-hower) !important;
 }
 
@@ -951,6 +960,9 @@ footer p {
   .sideMenu:hover .navItemName {
     display: block;
   }
+  .skillsGrid li:hover {
+    box-shadow: 0 10px 28px rgb(0 0 0 / 20%);
+  };
 }
 
 
